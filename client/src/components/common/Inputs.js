@@ -21,7 +21,7 @@ export const SignupInput = (props) => {
   return (
     <FormControl className="signupModalInput">
       <span className="signupModalInputHead">{props.head}</span>
-      <Input className="signupModalInputBase"/>
+      <Input type={props.type} className="signupModalInputBase"/>
     </FormControl>
   )
 }

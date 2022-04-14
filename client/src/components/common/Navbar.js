@@ -1,15 +1,10 @@
-import { useState, useEffect } from 'react';
+import React from "react";
 import { Typography, Grid, Link, Button, IconButton, Stack } from '@mui/material';
 import "../../styles/components/Navbar.css";
 import ApartmentRoundedIcon from '@mui/icons-material/ApartmentRounded';
 import AddBusinessOutlinedIcon from '@mui/icons-material/AddBusinessOutlined';
-import SignUpModal from '../modals/SignupModal';
-import LoginModal from '../modals/LoginModal';
 
 export default function Navbar() {
-
-  const [showLoginModal, setShowLoginModal] = useState(false)
-  const [showModal, setShowModal] = useState(false)
 
   return (
     <>

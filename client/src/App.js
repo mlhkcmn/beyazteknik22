@@ -32,7 +32,6 @@ class App extends Component {
             <Route exact path="*" name="Home Page" element={<Home />} />
             <Route exact path="/contact" name="Contact Page" element={<Contact />} />
           </Routes>
-          <Footer />
         </Suspense>
       </HashRouter>
     )

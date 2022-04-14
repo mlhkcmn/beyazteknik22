@@ -12,6 +12,7 @@ import {
     ThemeProvider
 } from "@mui/system/";
 import '../styles/pages/Contact.css';
+import Footer from '../components/common/Footer';
 
 const theme = createTheme({
     components: {
@@ -31,8 +32,8 @@ const theme = createTheme({
 const contact = () => {
     return (
         <>
-            <Grid container direction="row" sx={{height: '90%'}}>
-                <Grid item md="12" textAlign={'center'} height="0%">
+            <Grid container direction="row">
+                <Grid item md="12" textAlign={'center'}>
                     <Typography className='ConcatHeader'>
                         İLETİŞİM ADRESLERİMİZ
                     </Typography>
@@ -74,9 +75,11 @@ const contact = () => {
                     </Grid>
                 </Grid>
                 <Grid item xs={12} md={12} textAlign={'center'}>
-                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1KW-ll48H9n_Xq_Ixs06P-HJRzWtqeLuH&ehbc=2E312F" width="70%" height="440px" />
+                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1KW-ll48H9n_Xq_Ixs06P-HJRzWtqeLuH&ehbc=2E312F" width="70%" height="526px" />
                 </Grid>
             </Grid>
+            <br/>
+            <Footer/>
         </>
     )
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import Marka from '../components/common/Marka';
 import HeroSlider from '../components/common/HeroSlider'
 import Hizmetler from '../components/common/Hizmetler';
+import Footer from '../components/common/Footer';
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
             <br />
             <Marka />
             <br />
+            <Footer/>
         </>
     )
 }
