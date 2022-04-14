@@ -1,0 +1,28 @@
+.footerbg {
+    width: 100%;
+}
+
+.button {
+    max-width: 385px;
+    width: 150%;
+    background-color: #40b072 !important;
+}
+
+.card1 {
+    justify-items: center;
+    max-width: 372px;
+}
+
+.buttontext {
+    font-size: 20px !important;
+    text-transform: capitalize;
+    color: #fff;
+    font-family: Mulish;
+}
+
+.text {
+    font-size: 35px !important;
+    color: #fff;
+    font-family: Mulish;
+
+}

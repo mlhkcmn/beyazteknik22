@@ -1,0 +1,31 @@
+.footerBody {
+    background-color: #40b072 !important;
+    padding: 10px 0px 10px 0px !important;
+    border-radius: 6px 6px 0px 0px !important;
+    color: #FFFFFF !important;
+    max-width: 100% !important;
+}
+.footerCopyRight {
+    font-family: Mulish !important;
+    font-size: 18px !important;
+}
+.footerConcat {
+    font-size: 19.5px !important;
+    font-weight: bold !important;
+    letter-spacing: 0.4px !important;
+    font-family: Mulish !important;
+    word-spacing: 0.5px !important;
+}
+.footerDivider {
+    max-width: 199px !important;
+    margin-left: 4px !important;
+    margin-bottom: 5px !important;
+}
+.footerLocation {
+    font-size: 15px !important;
+    font-family: Mulish !important;
+}
+.footerText {
+    padding-left: 3px !important;
+    font-family: Mulish !important;
+}

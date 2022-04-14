@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.signupModalRegisterForm {
+    margin-top: 12px !important;
+    width: 100% !important;
+    height: 52px !important;
+}
+
+.signupModalFormMiddleText {
+    margin-top: 15px !important;
+    width: 100% !important;
+    padding-left: 49% !important;
+    padding-right: 50% !important;
+    font-size: 12px !important;
+    line-height: 15px !important;
+    color: #bababa !important;
+    font-family: Inter;
+}
+
+.signupModalLinkedinForm {
+    margin-top: 15px !important;
+    width: 100% !important;
+    height: 52px !important;
+}
+
+.registerLinkedin {
+    max-width: 429px !important;
+    height: 52px !important;
+    border-radius: 6px !important;
+    font-family: Mulish !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    color: #000000 !important;
+    border: 1px solid #a9a9a9 !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08) !important;
+    justify-content: left !important;
+    padding-left: 12% !important;
+}
+
+.signupModalDesc {
+    margin-top: 15px !important;
+    font-size: 16px !important;
+    line-height: 18px !important;
+    color: #202020 !important;
+    min-width: 240px !important;
+}
+
+.signupModalHeader {
+    font-weight: bold !important;
+    font-size: 23px !important;
+    line-height: 27px !important;
+    color: #000000 !important;
+    min-width: 240px !important;
+}
+
+.registerAccount {
+    height: 52px !important;
+    background: linear-gradient(90deg, #f7b407 3.64%, #fd954e 100%) !important;
+    border-radius: 6px !important;
+    text-align: center !important;
+    font-family: Mulish !important;
+    font-weight: bold !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    color: #ffffff !important;
+}
+
+.signupModalRadio {
+    width: 100% !important;
+    font-size: 16px !important;
+    line-height: 19px !important;
+    color: #696f79 !important;
+}
+
+.signupModalInputBase {
+    height: 48px !important;
+    padding: 5% !important;
+    border-radius: 6px !important;
+    border: 1px solid #8692a6 !important;
+    margin-top: 8px !important;
+    font-size: 14px !important;
+    line-height: 17px !important;
+    color: #8692a6 !important;
+}
+
+.signupModalInputHead {
+    font-size: 14px !important;
+    line-height: 19px !important;
+    color: #696f79 !important;
+    text-align: left;
+}
+
+.signupModalInput {
+    height: 94px !important;
+    width: 100% !important;
+    justify-content: center !important;
+}
