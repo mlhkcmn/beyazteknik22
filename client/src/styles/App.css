@@ -132,3 +132,48 @@
     border: 1px solid #a9a9a9;
     margin-top: 100px;
 }
+.navbar2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 15px;
+}
+.navbar2 a {
+    text-decoration: none;
+    color: inherit;
+}
+.logo2 {
+    margin-right: 50px;
+}
+.list2 {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+#toggler,
+.navbar2 label{
+    display: none;
+}
+@media screen and
+(max-width:600px) {
+    .menu2{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .list2 {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .navbar2 label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    #toggler:checked ~ .menu2{
+        max-height: 100%;
+    }
+}

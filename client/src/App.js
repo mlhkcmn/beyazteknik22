@@ -1,7 +1,6 @@
 import React, { Component, Suspense } from 'react'
 import {BrowserRouter as HashRouter, Route, Routes } from 'react-router-dom'
 import Navbar from './components/common/Navbar';
-import Footer from './components/common/Footer';
 import './styles/App.css'
 
 const loading = (
@@ -13,7 +12,7 @@ const loading = (
 // Pages
 const Home = React.lazy(() => import('./pages/home'))
 const About = React.lazy(() => import('./pages/about'))
-// const Market = React.lazy(() => import('./pages/marketplace'))
+const Market = React.lazy(() => import('./pages/market'))
 const Contact = React.lazy(() => import('./pages/contact'))
 const Login = React.lazy(() => import('./pages/login'))
 const Register = React.lazy(() => import('./pages/register'))
@@ -25,7 +24,7 @@ class App extends Component {
         <Suspense fallback={loading}>
         <Navbar/>
           <Routes>
-            {/* <Route exact path="/market" name="Market Page" element={<Market />} /> */}
+            <Route exact path="/market" name="Market Page" element={<Market />} />
             <Route exact path="/about" name="About Page" element={<About />} />
             <Route exact path="/login" name="Login Page" element={<Login />} />
             <Route exact path="/register" name="Register Page" element={<Register />} />
