@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/954.43ddc6a7.chunk.js","mappings":"iIAYA,UATe,WAEX,OACI","sources":["pages/market.js"],"sourcesContent":["import React from 'react'\n\n\nconst market = () => {\n\n    return (\n        <>\n            Market\n        </>\n    )\n}\n\nexport default market"],"names":[],"sourceRoot":""}
