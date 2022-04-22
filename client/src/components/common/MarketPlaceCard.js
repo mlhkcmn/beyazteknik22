@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card, CardContent, CardMedia, Typography, CardActionArea } from '@mui/material'
-import "../../styles/components/common/MarketPlaceCard.css";
+import "../../styles/components/MarketPlaceCard.css";
 
 const MarketPlaceCard = (props) => {
     return (
