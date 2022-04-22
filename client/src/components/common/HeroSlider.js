@@ -18,7 +18,7 @@ const HeroSlider = () => {
                             <Grid item>
                                 <Card className='card1'>
                                     <CardContent>
-                                        <Typography sx={{ fontFamily: 'Mulish', fontSize: '19px', textAlign: 'center' }}>
+                                        <Typography className='card1Text'>
                                             Sizde bizimle çalışmak ister misiniz ?
                                         </Typography>
                                     </CardContent>

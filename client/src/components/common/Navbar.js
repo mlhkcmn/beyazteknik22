@@ -82,7 +82,7 @@ export default function Navbar() {
                             aria-expanded={open ? 'true' : undefined}
                             onClick={handleOpen}
                             sx={{ float: 'right' }}>
-                            <MenuIcon fontSize="large" />
+                            <MenuIcon sx={{color:'#fff'}} fontSize="large" />
                         </IconButton>
                         <Menu
                             id="demo-positioned-menu"

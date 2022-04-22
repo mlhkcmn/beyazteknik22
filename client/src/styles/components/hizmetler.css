@@ -2,7 +2,7 @@
     font-size: 34px !important;
     font-weight: 100 !important;
     color: gray;
-    font-family: Mulish;
+    font-family: Mulish !important;
 }
 
 .hzmtcard {
@@ -16,11 +16,11 @@
 .text1 {
     font-size: 20px !important;
     color: #5c5c5c !important;
-    font-family: Mulish;
+    font-family: Mulish !important;
 }
 
 .text2 {
     font-size: 15px !important;
     color: #5c5c5c;
-    font-family: Mulish;
+    font-family: Mulish !important;
 }

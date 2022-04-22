@@ -14,7 +14,7 @@ const about = () => {
             <Grid container direction={'row'}>
                 <Grid container columnSpacing={3}>
                     <Grid item xs={12} md={6}>
-                        <Box paddingTop={6} textAlign={'center'}>
+                        <Box sx={{ paddingTop: { md: '13rem', lg: '10rem', xl: '5rem' } }} textAlign={'center'}>
                             <img style={{
                                 maxWidth: '100%',
                             }}
@@ -51,13 +51,13 @@ const about = () => {
                         <Typography paddingTop={2.3} className='aboutHeaderText'>
                             Özverili ve çözüm odaklı bir çalışma anlayışıyla müşterilerinin ve iş ortaklarının sorunlarına çözümler sunmaktır.
                         </Typography>
-                        <br/>
-                        <br/>
-                        <br/>
+                        <br />
+                        <br />
+                        <br />
                     </Grid>
                 </Grid>
             </Grid>
-            <Footer/>
+            <Footer />
         </>
     );
 }
