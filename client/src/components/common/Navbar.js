@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Typography, Grid, Link, Button, IconButton, Menu, MenuItem, Divider } from '@mui/material';
 import "../../styles/components/Navbar.css";
 import MenuIcon from '@mui/icons-material/Menu';
 import LoginIcon from '@mui/icons-material/Login';
 import HowToRegIcon from '@mui/icons-material/HowToReg';
 
-export default function Navbar() {
+export default function Navbar({user, setUser}) {
+    useEffect(() => {
+        if(localStorage.getItem('user') && !user) {
+            setUser(JSON.parse(localStorage.getItem("user")));
+        }
+    }, [user]);
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -50,18 +55,36 @@ export default function Navbar() {
                 </Grid>
                 <Grid container alignItems={'center'}sm="1.5" md="2" direction={'row'} >
                     <Grid container justifyContent={'space-around'}>
-                        <IconButton href='/login' aria-label="add to favorites"  >
+                    {
+                        user ? 
+                        <IconButton onClick={(e) => {
+                            localStorage.removeItem("user");
+                            setUser(null);
+                        }} href='/signin' aria-label="add to favorites"  >
+                            <LoginIcon sx={{ color: '#fff', }} fontSize='large' />
+                            <div className='iconButton'>
+                                Çıkış Yap
+                            </div>
+                        </IconButton>
+                        :
+                        <IconButton href='/signin' aria-label="add to favorites"  >
                             <LoginIcon sx={{ color: '#fff', }} fontSize='large' />
                             <div className='iconButton'>
                                 Giriş Yap
                             </div>
                         </IconButton>
-                        <IconButton href='/register' aria-label="add to favorites" >
+                    }
+                    {
+                        user ?
+                        null
+                        :
+                        <IconButton href='/signup' aria-label="add to favorites" >
                             <HowToRegIcon sx={{ color: '#fff', }} fontSize='large' />
                             <div className='iconButton'>
                                 Kayıt Ol
                             </div>
                         </IconButton>
+                    }
                     </Grid>
                 </Grid>
             </Grid>
@@ -118,12 +141,12 @@ export default function Navbar() {
                             </MenuItem>
                             <Divider />
                             <MenuItem>
-                                <Link className="menuItemLink" href={'/login'}>
+                                <Link className="menuItemLink" href={'/signin'}>
                                     <Typography className="menuItemText">Giriş Yap</Typography>
                                 </Link>
                             </MenuItem>
                             <MenuItem>
-                                <Link className="menuItemLink" href={'/register'}>
+                                <Link className="menuItemLink" href={'/signup'}>
                                     <Typography className="menuItemText">Kayıt Ol</Typography>
                                 </Link>
                             </MenuItem>

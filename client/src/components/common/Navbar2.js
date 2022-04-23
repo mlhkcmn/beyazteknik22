@@ -50,13 +50,13 @@ export default function Navbar() {
                 </Grid>
                 <Grid container alignItems={'center'}sm="1.5" md="2" direction={'row'} >
                     <Grid container justifyContent={'space-around'}>
-                        <IconButton href='/login' aria-label="add to favorites"  >
+                        <IconButton href='/signin' aria-label="add to favorites"  >
                             <LoginIcon sx={{ color: '#fff', }} fontSize='large' />
                             <div className='iconButton'>
                                 Giriş Yap
                             </div>
                         </IconButton>
-                        <IconButton href='/register' aria-label="add to favorites" >
+                        <IconButton href='/signup' aria-label="add to favorites" >
                             <HowToRegIcon sx={{ color: '#fff', }} fontSize='large' />
                             <div className='iconButton'>
                                 Kayıt Ol
@@ -118,12 +118,12 @@ export default function Navbar() {
                             </MenuItem>
                             <Divider />
                             <MenuItem>
-                                <Link className="menuItemLink" href={'/login'}>
+                                <Link className="menuItemLink" href={'/signin'}>
                                     <Typography className="menuItemText">Giriş Yap</Typography>
                                 </Link>
                             </MenuItem>
                             <MenuItem>
-                                <Link className="menuItemLink" href={'/register'}>
+                                <Link className="menuItemLink" href={'/signup'}>
                                     <Typography className="menuItemText">Kayıt Ol</Typography>
                                 </Link>
                             </MenuItem>

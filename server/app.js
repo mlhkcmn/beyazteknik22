@@ -1,11 +1,21 @@
-const express = require('express')
+import express from "express";
+import dotenv from "dotenv";
+import mongoose from "mongoose";
+import userRouter from "./Routers/userRouter.js";
+import cors from "cors";
 
-const path = require('path')
+dotenv.config();
 
-const app = express()
+const app = express();
 
-app.use(express.static(path.join(__dirname + "/public")))
+app.use(cors());
+app.use(express.json());
+app.use("/users", userRouter);
 
-const PORT = process.env.PORT || 5000
-
-app.listen(PORT)
+app.listen(5000, () => {
+  // veritabanı bağlantısı
+  mongoose
+    .connect(process.env.DB_CONNECTION_STRING)
+    .then(() => console.log("connected to database"))
+    .catch((error) => console.log(error));
+});

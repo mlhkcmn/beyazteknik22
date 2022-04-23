@@ -4,7 +4,7 @@ import HeroSlider from '../components/common/HeroSlider'
 import Hizmetler from '../components/common/Hizmetler';
 import Footer from '../components/common/Footer';
 
-const Home = () => {
+const Home = ({user}) => {
     return (
         <>
             <HeroSlider />

@@ -62,7 +62,7 @@
 
 .registerAccount {
     height: 52px !important;
-    background: linear-gradient(90deg, #f7b407 3.64%, #fd954e 100%) !important;
+    background: linear-gradient(90deg, #40b072 64%, #62b048 100%) !important;
     border-radius: 6px !important;
     text-align: center !important;
     font-family: Mulish !important;
@@ -97,7 +97,7 @@
     font-size: 16px !important;
     line-height: 19px !important;
     color: #696f79 !important;
-    text-align: left;
+    
     font-family: Mulish !important;
 }
 
@@ -130,7 +130,7 @@
     border-radius: 30px;
     text-align: center;
     border: 1px solid #a9a9a9;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .navbar2 {
     display: flex;
