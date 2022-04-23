@@ -5,7 +5,7 @@ import User from '../models/userModel.js';
 
 const router = express.Router();
 
-// localhost:5000/users 'a yapılan post isteği
+// localhost:4000/users 'a yapılan post isteği
 router.post("/signup", async (req, res)=>{
     try {
         //console.log(req.body)
@@ -31,7 +31,7 @@ router.post("/signup", async (req, res)=>{
     }
 })
 
-// localhost:5000/users/signin POST isteği
+// localhost:4000/users/signin POST isteği
 router.post("/signin", async (req,res)=>{
     try {
         const {email, password} = req.body;

@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 app.use("/users", userRouter);
 
-app.listen(5000, () => {
+app.listen(4000, () => {
   // veritabanı bağlantısı
   mongoose
     .connect(process.env.DB_CONNECTION_STRING)
