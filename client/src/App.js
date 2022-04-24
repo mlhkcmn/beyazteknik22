@@ -1,5 +1,6 @@
 import React, { Suspense, useState } from 'react'
 import { BrowserRouter as HashRouter, Route, Routes } from 'react-router-dom'
+import Footer from './components/common/Footer';
 import Navbar from './components/common/Navbar';
 import './styles/App.css'
 
@@ -31,6 +32,7 @@ function App() {
           <Route exact path="*" name="Home Page" element={<Home />} />
           <Route exact path="/contact" name="Contact Page" element={<Contact />} />
         </Routes>
+        <Footer/>
       </Suspense>
     </HashRouter>
   )

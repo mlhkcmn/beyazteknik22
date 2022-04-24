@@ -12,7 +12,6 @@ import {
     ThemeProvider
 } from "@mui/system/";
 import '../styles/pages/Contact.css';
-import Footer from '../components/common/Footer';
 
 const theme = createTheme({
     components: {
@@ -79,7 +78,6 @@ const contact = () => {
                 </Grid>
             </Grid>
             <br/>
-            <Footer/>
         </>
     )
 }
