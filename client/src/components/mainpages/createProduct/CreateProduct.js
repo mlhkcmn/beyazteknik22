@@ -179,9 +179,10 @@ function CreateProduct() {
                             ))
                         }
                     </select>
+                    <button type="submit">{onEdit? "Güncelle" : "Oluştur"}</button>
                 </div>
 
-                <button type="submit">{onEdit? "Güncelle" : "Oluştur"}</button>
+                
             </form>
         </div>
     )

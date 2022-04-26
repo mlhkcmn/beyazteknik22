@@ -18,6 +18,13 @@
     padding: 0 5px;
     outline: #40b072;
     border: 1px solid #40b072;
+    border-radius: 8px;
+    font-weight: 800;
+}
+.login-page form button:hover {
+    border: 2px #40b072 solid;
+    background-color: #FFF0FA;
+    color: #40b072;
 }
 .login-page form .row{
     display: flex;
@@ -34,7 +41,13 @@
 .login-page form a{
     color: #40b072;
     border: 2px solid #40b072;
+    border-radius: 8px;
+    font-weight: 700;
     padding: 6px;
     letter-spacing: 1.3px;
     text-transform: uppercase;
+}
+.login-page form a:hover{
+    background-color: #40b072;
+    color: #F8FFFE;
 }

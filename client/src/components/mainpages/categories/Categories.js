@@ -68,8 +68,8 @@ function Categories() {
                         <div className="row" key={category._id}>
                             <p>{category.name}</p>
                             <div>
-                                <button onClick={() => editCategory(category._id, category.name)}>Güncelle</button>
-                                <button onClick={() => deleteCategory(category._id)}>Sil</button>
+                                <button className='categories-button_update' onClick={() => editCategory(category._id, category.name)}>Güncelle</button>
+                                <button className='categories-button_delete' onClick={() => deleteCategory(category._id)}>Sil</button>
                             </div>
                         </div>
                     ))

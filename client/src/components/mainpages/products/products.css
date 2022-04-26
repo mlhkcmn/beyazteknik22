@@ -5,6 +5,12 @@
     justify-items: center;
     margin: 20px 0;
 }
+.products-build {
+    padding: 20px
+}
+.products-header {
+    padding-left: 35px
+}
 
 /* ----------- Product Item ----------------- */
 @import url("../utils/productItem/productItem.css");
@@ -20,15 +26,24 @@
     margin: 0 15px;
 }
 .delete-all span{
-    text-transform: uppercase;
-    color: rgb(3, 165, 206);
-    letter-spacing: 1.3px;
+    text-transform: capitalize;
+    color:  #40b072;
+    font-size: large;
+    font-weight: 600;
 }
 .delete-all button{
+    border: 2px solid #40b072;
+    padding: 8px 25px;
+    color: #40b072;
+    text-transform: capitalize;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.delete-all button:hover{
     border: 1px solid crimson;
-    padding: 10px 25px;
     color: crimson;
-    text-transform: uppercase;
+    text-transform: capitalize;
+    font-weight: bolder;
 }
 
 /* ------------ Filters Menu ----------------- */
@@ -42,11 +57,24 @@
     flex-wrap: wrap;
     margin: 15px 0;
 }
+.filter_menu span {
+    font-weight: 500;
+    font-weight: Mulish;
+    font-size: large;
+    color: rgb(120, 118, 118);
+}
+.filter_menu select {
+    color: rgb(120, 109, 109);
+    font-size: 14.5px;
+}
 .filter_menu select, input{
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
+    border-radius: 8px;
     outline: none;
     height: 40px;
-    padding: 0 5px;
+    padding: 0 8px 0 5px;
+    font-weight: 600;
+    font-family: Mulish;
 }
 .filter_menu input{
     flex: 1;
@@ -58,8 +86,16 @@
     text-align: center;
 }
 .load_more button{
-    padding: 10px 25px;
+    padding: 8px 25px;
     margin-bottom: 20px;
-    border: 1px solid #555;
+    border: 2px solid rgba(0, 0, 0, 0.18);
+    color: #8A8080;
     text-transform: capitalize;
+    border-radius: 8px;
+    font-weight: 500;
+}
+.load_more button:hover{
+    background-color: #FF9904;
+    color: #F8FFFE;
+    border: 2px #F8FFFE solid;
 }

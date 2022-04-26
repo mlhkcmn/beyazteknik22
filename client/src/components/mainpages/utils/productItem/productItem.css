@@ -23,7 +23,9 @@
     color: #323232;
 }
 .product_card span{
-    color: crimson;
+    color: #40b072;
+    font-size: x-large;
+    font-weight: bolder;
 }
 .product_box p{
     width: 100%;
@@ -33,6 +35,8 @@
     height: 70px;
     overflow: hidden;
     color: #323232;
+    font-family: Mulish;
+    font-weight: 600;
 }
 .row_btn{
     width: 100%;
@@ -43,18 +47,34 @@
 .row_btn a{
     width: 50%;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
     color: white;
-    font-weight: 600;
-    letter-spacing: 2px;
+    font-weight: 500;
+    letter-spacing: 1.7px;
     padding: 6px;
+    border-radius: 3px;
+}
+#btn_delete{
+    background: #555;
+    margin-right: 5px;
+}
+#btn_delete:hover {
+    background: crimson;
 }
 #btn_buy{
     background: #555;
     margin-right: 5px;
 }
+#btn_buy:hover{
+    background: #40b072;
+    margin-right: 5px;
+}
 #btn_view{
     background: teal;
+    margin-left: 5px;
+}
+#btn_view:hover{
+    background: #FF9904;
     margin-left: 5px;
 }
 .product_card input{

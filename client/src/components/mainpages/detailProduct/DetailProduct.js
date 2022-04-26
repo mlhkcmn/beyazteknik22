@@ -31,7 +31,7 @@ function DetailProduct() {
                         <h2>{detailProduct.title}</h2>
                         <h6>#id: {detailProduct.product_id}</h6>
                     </div>
-                    <span>$ {detailProduct.price}</span>
+                    <span>₺ {detailProduct.price}</span>
                     <p>{detailProduct.description}</p>
                     <p>{detailProduct.content}</p>
                     <p>Sold: {detailProduct.sold}</p>
@@ -42,8 +42,8 @@ function DetailProduct() {
                 </div>
             </div>
 
-            <div>
-                <h2>Benzer Ürünler</h2>
+            <div className='products-build'>
+                <h2 className='products-header'>Benzer Ürünler</h2>
                 <div className="products">
                     {
                         products.map(product => {

@@ -41,7 +41,7 @@ function Register() {
 
                 <div className="row">
                     <button type="submit">Kayıt Ol</button>
-                    <Link to="/login">Giriş Yap</Link>
+                    <Link to="/login">Gİrİş Yap</Link>
                 </div>
             </form>
         </div>
