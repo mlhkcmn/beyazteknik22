@@ -59,6 +59,7 @@ function Header() {
             <ul style={styleMenu}>
                 <li><Link to="/">Anasayfa</Link></li>
                 <li><Link to="/about">Hakkımızda</Link></li>
+                <li><Link to="/contact">İletişim</Link></li>
                 <li><Link to="/shop">{isAdmin ? 'Ürünler' : 'Mağaza'}</Link></li>
 
                 {isAdmin && adminRouter()}

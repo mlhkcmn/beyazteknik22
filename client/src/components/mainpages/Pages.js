@@ -14,6 +14,7 @@ import home from './home/home'
 
 import {GlobalState} from '../../GlobalState'
 import about from './about/about'
+import contact from './contact/contact'
 
 
 function Pages() {
@@ -25,6 +26,7 @@ function Pages() {
     return (
         <Switch>
             <Route path="/" exact component={home} />
+            <Route path="/contact" exact component={contact} />
             <Route path="/about" exact component={about} />
             <Route path="/shop" exact component={Products} />
             <Route path="/detail/:id" exact component={DetailProduct} />
