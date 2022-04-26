@@ -1,0 +1,39 @@
+.navbarButton {
+    text-transform: capitalize !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    font-family: Mulish;
+    color: white;
+    text-decoration: none;
+}
+.navbarButton:hover {
+    color: white;
+    text-decoration: none;
+}
+.navbarContainer {
+    width: 100%;
+    background-color: #40b072;
+    margin-bottom: 0.55%;
+    height: 93px;
+}
+.navbarLogo {
+    height: 75px;
+    padding: 5px 0px 0px 5px;
+    border-radius: 18px;
+    box-shadow: 5px 5px #62b048, 10px 10px #099412, 15px 15px green;
+}
+.iconButton {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    word-spacing: 0.5px;
+    font-family: Mulish;
+    color: #fff;
+}
+.menuItemText {
+    font-family: Mulish !important;
+}
+.menuItemLink {
+    text-decoration: none !important;
+    color: #000 !important;
+}

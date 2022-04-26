@@ -1,0 +1,27 @@
+.MarketPlaceCard:hover {
+    border: 1px #40b072 solid;
+    text-decoration: none;
+    
+}
+.MarketPlaceCard {
+    border: 0.1px rgb(118, 162, 201) solid;
+    height: 355px;
+}
+.sellButton {
+    border: 1px rgb(118, 162, 201) solid !important;
+    border-radius: 50px !important;
+    width: 85% !important;
+    text-align: center;
+    text-transform: capitalize !important;
+    color: rgb(118, 162, 201) !important;
+}
+.sellButton:hover {
+    border: 1px rgb(248, 248, 248) solid !important;
+    background-color: #40b072 !important;
+    color: rgb(248, 248, 248) !important;
+}
+.marketCardMedia {
+    width: 170px !important;
+    height: 200px !important;
+    border-radius: 10px !important; 
+}

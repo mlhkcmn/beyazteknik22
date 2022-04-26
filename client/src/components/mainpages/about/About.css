@@ -1,0 +1,12 @@
+.aboutHeader {
+    color: #2f4f4f !important;
+    font-size: 38px !important;
+    font-weight: bold !important;
+    font-family: Mulish !important;
+    text-align: center;
+}
+.aboutHeaderText {
+    color: #202020 !important;
+    font-family: Mulish !important;
+    font-size: 18px !important;
+}
