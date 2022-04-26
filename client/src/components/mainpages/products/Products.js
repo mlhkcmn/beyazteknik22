@@ -69,7 +69,7 @@ function Products() {
                 <button onClick={deleteAll}>Hepsini Sil</button>
             </div>
         }
-
+        <center>
         <div className="products">
             {
                 products.map(product => {
@@ -78,6 +78,7 @@ function Products() {
                 })
             } 
         </div>
+        </center>
 
         <LoadMore />
         {products.length === 0 && <Loading />}
