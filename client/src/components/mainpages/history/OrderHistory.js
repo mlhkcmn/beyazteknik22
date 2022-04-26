@@ -31,15 +31,15 @@ function OrderHistory() {
 
     return (
         <div className="history-page">
-            <h2>History</h2>
+            <h2>Siparişlerim</h2>
 
-            <h4>You have {history.length} ordered</h4>
+            <h4>{history.length} Sipariş Bulundu.</h4>
 
             <table>
                 <thead>
                     <tr>
-                        <th>Payment ID</th>
-                        <th>Date of Purchased</th>
+                        <th>Ödeme Numarası</th>
+                        <th>Satın Alma Tarihi</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -49,7 +49,7 @@ function OrderHistory() {
                             <tr key={items._id}>
                                 <td>{items.paymentID}</td>
                                 <td>{new Date(items.createdAt).toLocaleDateString()}</td>
-                                <td><Link to={`/history/${items._id}`}>View</Link></td>
+                                <td><Link to={`/history/${items._id}`}>İncele</Link></td>
                             </tr>
                         ))
                     }

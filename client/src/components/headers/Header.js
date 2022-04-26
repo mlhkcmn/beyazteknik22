@@ -33,7 +33,7 @@ function Header() {
     const loggedRouter = () => {
         return (
             <>
-                <li><Link to="/history">History</Link></li>
+                <li><Link to="/history">Siparişlerim</Link></li>
                 <li><Link to="/" onClick={logoutUser}>Çıkış Yap</Link></li>
             </>
         )
@@ -52,7 +52,7 @@ function Header() {
 
             <div className="logo">
                 <h1>
-                    <Link className='headerbaslik' to="/">{isAdmin ? 'Admin' : 'Beyaz Teknik'}</Link>
+                    <Link className='headerbaslik' to="/">{isAdmin ? 'Admin Paneli' : 'Beyaz Teknik'}</Link>
                 </h1>
             </div>
 
