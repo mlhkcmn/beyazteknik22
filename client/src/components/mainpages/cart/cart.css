@@ -1,36 +1,16 @@
 .cart{
-    border: 3px solid #ccc;
+    position: relative;
+    border: 1px solid #ccc;
     transform: scaleY(0.98);
-    border-radius: 15px;
 }
 .amount span{
-    color: rgba(121, 117, 117, 0.788);
+    color: crimson;
     padding: 0 20px;
 }
 .amount button{
-    width: 45px;
-    height: 45px;
-    border: 2px solid #777;
-    font-size: xx-large;
-    border-radius: 50px;
-}
-.amount-button_plus{
-    color: #40b072;
-    padding-bottom: 5px;
-    padding-right: 0.5px;
-}
-.amount-button_plus:hover{
-    background-color: #40b072;
-    color: white;
-}
-.amount-button_sour{
-    color: crimson;
-    padding-bottom: 5px;
-    padding-right: 0.5px;
-}
-.amount-button_sour:hover{
-    background-color: crimson;
-    color: white;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #777;
 }
 .delete{
     position: absolute;
@@ -46,9 +26,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px;
-    font-size: x-large;
 }
 .total h3{
-    color: black;
+    color: crimson;
 }

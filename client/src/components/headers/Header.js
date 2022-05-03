@@ -33,7 +33,7 @@ function Header() {
     const loggedRouter = () => {
         return (
             <>
-                <li><Link to="/history">Sİparİşlerİm</Link></li>
+                <li><Link to="/history">Siparişlerim</Link></li>
                 <li><Link to="/" onClick={logoutUser}>Çıkış Yap</Link></li>
             </>
         )
@@ -59,13 +59,13 @@ function Header() {
             <ul style={styleMenu}>
                 <li><Link to="/">Anasayfa</Link></li>
                 <li><Link to="/about">Hakkımızda</Link></li>
-                <li><Link to="/contact">İletİşİm</Link></li>
+                <li><Link to="/contact">İletişim</Link></li>
                 <li><Link to="/shop">{isAdmin ? 'Ürünler' : 'Mağaza'}</Link></li>
 
                 {isAdmin && adminRouter()}
 
                 {
-                    isLogged ? loggedRouter() : <li><Link to="/login">Gİrİş Yap ✥ Kayıt Ol</Link></li>
+                    isLogged ? loggedRouter() : <li><Link to="/login">Giriş Yap ✥ Kayıt Ol</Link></li>
                 }
                 <div>
                     <li onClick={() => setMenu(!menu)}>

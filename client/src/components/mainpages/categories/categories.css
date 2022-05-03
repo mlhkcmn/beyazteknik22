@@ -5,12 +5,6 @@
     justify-content: space-around;
     margin: 30px auto;
 }
-.categories-button_update:hover {
-    background-color: rgb(36, 168, 36);
-}
-.categories-button_delete:hover {
-    background-color: red;
-}
 .categories form{
     width: 290px;
     margin-bottom: 20px;
@@ -36,11 +30,6 @@
     background: #555;
     color: white;
     margin-left: 10px;
-    border-radius: 5px;
-    font-weight: 500;
-}
-.categories-button_create:hover {
-    background-color: rgb(232, 140, 19);
 }
 .categories .row{
     min-width: 290px;
@@ -49,6 +38,5 @@
     align-items: center;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1.5px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #ccc;
 }

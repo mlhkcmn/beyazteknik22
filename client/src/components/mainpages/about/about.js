@@ -6,6 +6,7 @@ import {
     Typography,
 } from '@mui/material';
 import './About.css';
+import Footer from '../../common/Footer';
 
 const about = () => {
     return (
@@ -54,6 +55,7 @@ const about = () => {
                         <br />
                         <br />
                     </Grid>
+                    <Footer />
                 </Grid>
             </Grid>
         </>

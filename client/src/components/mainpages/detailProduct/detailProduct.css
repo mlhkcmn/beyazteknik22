@@ -19,25 +19,21 @@
     width: 100%;
     margin: 5px 20px;
 }
-.box-detail span{
-    font-size: larger;
-    font-weight: bold;
-}
 .box-detail .row{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .box-detail h2{
-    text-transform: capitalize;
-    color: rgb(139, 28, 0);
+    text-transform: uppercase;
+    color: darkblue;
+    letter-spacing: 2px;
     font-weight: 2rem;
 }
 .box-detail p{
     line-height: 1.5;
-    margin: 15px 0;
+    margin: 10px 0;
     opacity: 0.8;
-    font-weight: 500;
 }
 .box-detail .cart{
     background: #333;
@@ -47,9 +43,4 @@
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 2px;
-    border-radius: 5px;
-    text-transform: capitalize;
-}
-.box-detail .cart:hover {
-    background-color: #40b072;
 }
