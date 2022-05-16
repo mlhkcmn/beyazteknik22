@@ -28,7 +28,7 @@ const Hizmetler = () => {
                         <Card className='hzmtcard'>
                             <br />
                             <Typography>
-                                <img src={camasir} />
+                                <img src={camasir} alt="camasir" />
                             </Typography>
                             <br />
                             <Typography className='text1' >
@@ -44,7 +44,7 @@ const Hizmetler = () => {
                         <Card className='hzmtcard'>
                             <br />
                             <Typography>
-                                <img src={buzdolabi} />
+                                <img src={buzdolabi} alt="buzdolabı" />
                             </Typography>
                             <br />
                             <Typography className='text1' >
@@ -60,7 +60,7 @@ const Hizmetler = () => {
                         <Card className='hzmtcard'>
                             <br />
                             <Typography>
-                                <img src={kombi} />
+                                <img src={kombi} alt="kombi" />
                             </Typography>
                             <br />
                             <Typography className='text1' >
@@ -79,7 +79,7 @@ const Hizmetler = () => {
                         <Card className='hzmtcard'>
                             <br />
                             <Typography>
-                                <img src={klima} />
+                                <img src={klima} alt="klima" />
                             </Typography>
                             <br />
                             <Typography className='text1' >
@@ -95,7 +95,7 @@ const Hizmetler = () => {
                         <Card className='hzmtcard'>
                             <br />
                             <Typography>
-                                <img src={bulasik} />
+                                <img src={bulasik} alt="bulasik" />
                             </Typography>
                             <br />
                             <Typography className='text1' >
@@ -111,7 +111,7 @@ const Hizmetler = () => {
                         <Card className='hzmtcard'>
                             <br />
                             <Typography>
-                                <img src={firin} />
+                                <img src={firin} alt="firin" />
                             </Typography>
                             <br />
                             <Typography className='text1' >

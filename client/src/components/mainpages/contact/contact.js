@@ -75,7 +75,7 @@ const contact = () => {
                     </Grid>
                 </Grid>
                 <Grid item xs={12} md={12} textAlign={'center'}>
-                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1KW-ll48H9n_Xq_Ixs06P-HJRzWtqeLuH&ehbc=2E312F" width="70%" height="526px" />
+                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1KW-ll48H9n_Xq_Ixs06P-HJRzWtqeLuH&ehbc=2E312F" title='map' width="70%" height="526px" />
                 </Grid>
             </Grid>
             <br/>
