@@ -15,6 +15,7 @@ import home from './home/home'
 import {GlobalState} from '../../GlobalState'
 import about from './about/about'
 import contact from './contact/contact'
+import Tasks from './task/Tasks'
 
 
 function Pages() {
@@ -35,6 +36,7 @@ function Pages() {
             <Route path="/register" exact component={isLogged ? NotFound : Register} />
 
             <Route path="/category" exact component={isAdmin ? Categories : NotFound} />
+            <Route path="/task" exact component={Tasks} />
             <Route path="/create_product" exact component={isAdmin ? CreateProduct : NotFound} />
             <Route path="/edit_product/:id" exact component={isAdmin ? CreateProduct : NotFound} />
 

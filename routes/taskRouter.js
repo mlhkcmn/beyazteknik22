@@ -6,10 +6,10 @@ const authAdmin = require('../middleware/authAdmin')
 
 router.route('/task')
     .get(TaskCtrl.getTasks)
-    .post(auth, authAdmin, TaskCtrl.createTask)
+    .post(auth, TaskCtrl.createTask)
 
 router.route('task/:id')
-    .delete(auth, authAdmin, TaskCtrl.deleteTask)
-    .put(auth, authAdmin, TaskCtrl.updateTask)
+    .delete(auth, TaskCtrl.deleteTask)
+    .put(auth, TaskCtrl.updateTask)
 
 module.exports = router

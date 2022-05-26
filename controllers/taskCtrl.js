@@ -28,7 +28,7 @@ const TaskCtrl = {
             await Task.findByIdAndDelete(req.params.id)
             res.json({ msg: "Task Silindi." })
         } catch (err) {
-            return res.status(500).json({ msg: err.message })
+            return res.status(500).json({ msg: 'ksadkalsmdklasd' })
         }
     },
     updateTask: async (req, res) => {
