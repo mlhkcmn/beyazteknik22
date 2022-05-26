@@ -1,0 +1,40 @@
+.TaskCard {
+    max-width: 300px;
+    overflow: hidden;
+    height: 500px;
+    padding: 10px;
+    box-shadow: 0 0 15px #ddd;
+    margin: 10px 10px;
+    position: relative;
+    place-items: center!important;
+    text-align: center!important;
+}
+.TaskCardInput {
+    border: 1px #40b072 solid;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    padding-left: 5px !important;
+}
+.TaskCardInputMulti {
+    border: 1px #40b072 solid;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    padding-left: 5px !important;
+}
+.TaskCardButton {
+    margin-top: 5px !important;
+    border: #40b072 2px solid !important;
+    width: 120px;
+    color: #40b072 !important;
+    font-family: Mulish !important;
+}
+
+.TaskProductCard {
+    height: 300px;
+    background-color: khaki !important;
+    max-width: 360px;
+}
