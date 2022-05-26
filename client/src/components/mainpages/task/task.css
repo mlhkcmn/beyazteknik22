@@ -30,4 +30,11 @@
     border: #40b072 2px solid !important;
     width: 120px;
     color: #40b072 !important;
+    font-family: Mulish !important;
+}
+
+.TaskProductCard {
+    height: 300px;
+    background-color: khaki !important;
+    max-width: 360px;
 }
