@@ -38,3 +38,7 @@
     background-color: khaki !important;
     max-width: 360px;
 }
+
+.submissionTableViewButton {
+    border: 2px solid red;
+}

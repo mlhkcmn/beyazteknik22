@@ -59,6 +59,11 @@ function Header() {
                 <li><Link to="/">Anasayfa</Link></li>
                 <li><Link to="/about">Hakkımızda</Link></li>
                 <li><Link to="/contact">İletişim</Link></li>
+                {isLogged ?
+                    <li><Link to="/tasks">İş Takibi</Link></li>
+                    :
+                    null
+                }
                 <li><Link to="/shop">{isAdmin ? 'Ürünler' : 'Mağaza'}</Link></li>
 
                 {isAdmin && adminRouter()}
