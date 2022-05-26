@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react'
-import { Button, Typography, Modal, Box, IconButton, Grid, Card, CardContent, Input } from '@mui/material'
+import { Button, Typography, Modal, Box, IconButton, Grid, Card, CardContent, Input, Divider } from '@mui/material'
 import CloseIcon from '@mui/icons-material/Close'
 import { GlobalState } from '../../../GlobalState'
 import axios from 'axios'
@@ -84,11 +84,16 @@ function Tasks() {
     const handleClose = () => setOpen(false);
     return (
         <>
-            <Button onClick={handleOpen}>
-                <Typography>
-                    Yeni Rapor Ekle
-                </Typography>
-            </Button>
+            <center>
+                <br />
+                <Button onClick={handleOpen} sx={{ border: '2px solid #40b072', color: '#40b072' }}>
+                    <Typography>
+                        Yeni Rapor Ekle
+                    </Typography>
+                </Button>
+                <br />
+                <br />
+            </center>
             <Modal open={open} onClose={handleClose} sx={styles} className='blogmodal'>
                 <center>
                     <Box sx={{ ...style, }}>
@@ -104,29 +109,28 @@ function Tasks() {
                             <Grid item xs={12}>
                                 <Card className='TaskCard'>
                                     <Grid container direction='row' sx={{ fontSize: '18px', fontFamily: 'Mulish' }}>
-                                        <form onSubmit={createTask}>
+                                        <form className='TaskCardForm' onSubmit={createTask}>
                                             <Grid item xs={12}>
-                                                <label htmlFor="name">Name</label>
+                                                <label htmlFor="name">Şube Adı</label>
                                                 <br />
                                                 <Input className='TaskCardInput' type="text" name="name" id="name" required onChange={e => setName(e.target.value)} value={name} />
                                             </Grid>
                                             <Grid item xs={12}>
-                                                <label htmlFor="title">Title</label>
+                                                <label htmlFor="title">Başlık</label>
                                                 <br />
                                                 <Input className='TaskCardInput' type="text" name="title" id="title" required onChange={e => setTitle(e.target.value)} value={title} />
                                             </Grid>
                                             <Grid item xs={12}>
-                                                <label htmlFor="description">Description</label>
+                                                <label htmlFor="description">Açıklama</label>
                                                 <br />
                                                 <Input className='TaskCardInputMulti' rows={3} multiline type="text" name="description" id="description" required onChange={e => setDesc(e.target.value)} value={description} />
                                             </Grid>
                                             <Grid item xs={12}>
-                                                <label htmlFor="content">Content</label>
+                                                <label htmlFor="content">İçerik</label>
                                                 <br />
                                                 <Input className='TaskCardInputMulti' rows={2} multiline type="text" name="content" id="content" required onChange={e => setContent(e.target.value)} value={content} />
                                             </Grid>
                                             <Grid item xs={12}>
-                                                <label htmlFor="submit">Submit</label>
                                                 <br />
                                                 <Button className='TaskCardButton' type='submit'>
                                                     Onayla
@@ -142,24 +146,39 @@ function Tasks() {
             </Modal>
             {
                 tasks.map(task => (
-                    <Card sx={{ minWidth: '270px', textAlign: 'center', border: '1px solid red' }}>
-                        <CardContent>
-                            <div key={task._id}>
-                                <Typography variant="h5" color="text.primary" gutterBottom>
-                                    {task.name}
-                                </Typography>
-                                <Typography variant="h6" component="div" gutterBottom>
-                                    {task.title}
-                                </Typography>
-                                <Typography sx={{ mb: 1.5 }} >
-                                    {task.description}
-                                </Typography>
-                                <Typography color="text.secondary">
-                                    {task.content}
-                                </Typography>
-                            </div>
-                        </CardContent>
-                    </Card>
+                    <center>
+                        <Card sx={{ minWidth: '270px', textAlign: 'center', border: '1px solid #40b072', maxWidth: '350px' }}>
+                            <CardContent>
+                                <div key={task._id}>
+                                    <label htmlFor="name">Şube Adı:</label>
+                                    <Typography variant="h5" color="text.primary" gutterBottom>
+                                        {task.name}
+                                    </Typography>
+                                    <Divider />
+                                    <br />
+                                    <label htmlFor="title">Başlık:</label>
+                                    <Typography variant="h6" component="div" gutterBottom>
+                                        {task.title}
+                                    </Typography>
+                                    <Divider />
+                                    <br />
+                                    <label htmlFor="description">Açıklama:</label>
+                                    <Typography sx={{ mb: 1.5 }} >
+                                        {task.description}
+                                    </Typography>
+                                    <Divider />
+                                    <br />
+                                    <label htmlFor="content">İçerik:</label>
+                                    <Typography color="text.secondary">
+                                        {task.content}
+                                    </Typography>
+                                    <br />
+                                    <Divider />
+                                </div>
+                            </CardContent>
+                        </Card>
+                        <br />
+                    </center>
                 ))
             }
         </>

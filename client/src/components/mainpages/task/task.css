@@ -42,3 +42,6 @@
 .submissionTableViewButton {
     border: 2px solid red;
 }
+.TaskCardForm {
+    width: 100%;
+}
