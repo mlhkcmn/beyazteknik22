@@ -7,14 +7,14 @@ const FlatItem = ({ slug }) => {
     return (
         <>
             <CardActionArea href={`/flat/${slug}`}>
-                <Grid item xs={6} direction="row" textAlign="center" sx={{ bgcolor: 'khaki' }}>
+                <Grid item xs={4} direction="row" textAlign="center" sx={{ bgcolor: 'khaki' }}>
                     <img className="FlatItemImage" src={Product} alt="flat" />
                     <Grid item xs={12}>
-                        <Stack item xs={12} sx={{ bgcolor: 'white' }} pb={3}>
-                            <Typography className="item-title">Bursa Gemlikde Deniz Manzaralı Daire</Typography>
-                            <Typography className="item-price">3.500.000₺</Typography>
+                        <Stack direction="row" justifyContent="space-between" spacing={3} padding={1} sx={{ bgcolor: 'white' }}>
+                            <Typography fontWeight="600" color="#364465" fontSize="18px" textAlign="left">Bursa Gemlikde Deniz Manzaralı Daire</Typography>
+                            <Typography fontWeight="bold" color="#364465" fontSize="25px">3.500.000₺</Typography>
                         </Stack>
-                        <div className="item-icon d-flex alig-items-center justify-content-between">
+                        <Stack direction="row" justifyContent="space-between">
                             <div>
                                 <Home fontSize="medium" /><span>Daire</span>
                             </div>
@@ -27,6 +27,9 @@ const FlatItem = ({ slug }) => {
                             <div>
                                 <Store fontSize="medium" /><span> Altın Emlak </span>
                             </div>
+                        </Stack>
+                        <div className="item-icon d-flex alig-items-center justify-content-between">
+
                         </div>
                     </Grid>
                 </Grid>
