@@ -2,15 +2,15 @@ import React, { useContext, useState } from 'react'
 import { GlobalState } from '../../GlobalState'
 import Menu from './icon/menu.svg'
 import Close from './icon/close.svg'
-import Cart from './icon/cart.svg'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
+import Logo from './logonavbar.png'
+import { Button, Typography } from '@mui/material'
 
 function Header() {
     const state = useContext(GlobalState)
     const [isLogged] = state.userAPI.isLogged
     const [isAdmin] = state.userAPI.isAdmin
-    const [cart] = state.userAPI.cart
     const [menu, setMenu] = useState(false)
 
     const logoutUser = async () => {
@@ -33,8 +33,8 @@ function Header() {
     const loggedRouter = () => {
         return (
             <>
-                <li><Link to="/history">Siparişlerim</Link></li>
-                <li><Link to="/" onClick={logoutUser}>Çıkış Yap</Link></li>
+                <li><Link to="/history">Profilim</Link></li>
+                <li><Link className='LogOutButton' to="/" onClick={logoutUser}>Çıkış Yap</Link></li>
             </>
         )
     }
@@ -50,21 +50,20 @@ function Header() {
             </div>
 
             <div className="logo">
-                <h1>
-                    <Link className='headerbaslik' to="/">{isAdmin ? 'Admin Paneli' : 'Beyaz Teknik'}</Link>
-                </h1>
+                <Link to="/">
+                    <img src={Logo} alt="logo" style={{ width: '170px' }} />
+                </Link>
             </div>
 
             <ul style={styleMenu}>
-                <li><Link to="/">Anasayfa</Link></li>
-                <li><Link to="/about">Hakkımızda</Link></li>
-                <li><Link to="/contact">İletişim</Link></li>
+                <li><Link to="/">Ana Sayfa</Link></li>
+                <li><Link to="/about">İlanlar</Link></li>
+                <li><Link to="/contact">Projeler</Link></li>
                 {isLogged ?
-                    <li><Link to="/tasks">İş Takibi</Link></li>
+                    <li><Link to="/tasks">İlan Ekle</Link></li>
                     :
                     null
                 }
-                <li><Link to="/shop">{isAdmin ? 'Ürünler' : 'Mağaza'}</Link></li>
 
                 {isAdmin && adminRouter()}
 
@@ -78,16 +77,6 @@ function Header() {
                 </div>
 
             </ul>
-
-            {
-                isAdmin ? ''
-                    : <div className="cart-icon">
-                        <span>{cart.length}</span>
-                        <Link to="/cart">
-                            <img src={Cart} alt="" width="30" />
-                        </Link>
-                    </div>
-            }
 
         </header>
     )

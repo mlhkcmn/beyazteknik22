@@ -16,8 +16,9 @@ header .logo{
     color: #555;
 }
 header a{
-    text-transform: uppercase;
-    color: #40b072;
+    font-size: 15px;
+    font-weight: 600;
+    color:#27282e  !important;
 }
 header ul li{
     display: inline-block;
@@ -44,4 +45,7 @@ header ul li:hover{
     right: -10px;
     padding: 5px 7px;
     font-size: 10px;
+}
+.LogOutButton {
+    color: crimson !important;
 }

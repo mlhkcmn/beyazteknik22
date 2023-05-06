@@ -1,21 +1,17 @@
 import React from 'react'
-import Marka from '../../common/Marka';
-import HeroSlider from '../../common/HeroSlider'
-import Hizmetler from '../../common/Hizmetler';
-import Footer from '../../common/Footer';
+import Banner from '../../common/Banner'
+import FlatList from '../../common/FlatList'
+import BestFlatList from '../../common/BestFlatList'
+import TeamList from '../../common/TeamList'
 
 const Home = ({user}) => {
     return (
-        <>
-            <br />
-            <HeroSlider />
-            <br />
-            <Hizmetler />
-            <br />
-            <Marka />
-            <br />
-            <Footer />
-        </>
+        <React.Fragment>
+            <Banner />
+            <FlatList />
+          {/*   <BestFlatList />
+            <TeamList /> */}
+        </React.Fragment>
     )
 }
 
